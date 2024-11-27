@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lost and Found</h1>
+        <nav>
+            <a href="#items">View Items</a>
+            <a href="#submit-item">Submit Item</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Item Listing Section -->
+        <section id="items">
+            <h2>Lost and Found Items</h2>
+            <ul id="item-list">
+                <!-- Items will be dynamically added here -->
+            </ul>
+        </section>
+
+        <!-- Submit Item Form -->
+        <section id="submit-item">
+            <h2>Submit a New Item</h2>
+            <form id="item-form">
+                <label for="item-name">Item Name:</label>
+                <input type="text" id="item-name" required>
+
+                <label for="item-type">Type:</label>
+                <select id="item-type" required>
+                    <option value="lost">Lost</option>
+                    <option value="found">Found</option>
+                </select>
+
+                <label for="item-description">Description:</label>
+                <textarea id="item-description" rows="4" required></textarea>
+
+                <label for="contact-info">Contact Info:</label>
+                <input type="text" id="contact-info" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Item Detail Section (Initially Hidden) -->
+        <div id="modal-overlay"></div>
+        <section id="item-detail" style="display: none;">
+            <h2>Item Details</h2>
+            <p><strong>Name:</strong> <span id="detail-name"></span></p>
+            <p><strong>Type:</strong> <span id="detail-type"></span></p>
+            <p><strong>Description:</strong> <span id="detail-description"></span></p>
+            <p><strong>Contact Info:</strong> <span id="detail-contact-info"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Indira Gandhi Delhi Technical University</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

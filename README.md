@@ -14,5 +14,4 @@ This project is a **Lost and Found Website** designed to help users report and s
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: Node.js, Express
 - **Database**: MongoDB
-- **Version Control**: Git
 - **Deployment**: GitHub Pages (Frontend) / Vercel (Backend)
